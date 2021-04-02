@@ -1,0 +1,3 @@
+/media/adam/5E387D9B387D72BF/Dokumenty/vš/2.semestr/IOS/IOS-projekt1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/adam/5E387D9B387D72BF/Dokumenty/vš/2.semestr/IOS/IOS-projekt1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/adam/5E387D9B387D72BF/Dokumenty/vš/2.semestr/IOS/IOS-projekt1/cmake-build-debug/CMakeFiles/IOS_projekt1.dir

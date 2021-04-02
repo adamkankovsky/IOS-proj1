@@ -1,0 +1,25 @@
+FIN_PRINT=$(echo "$FIN_PRINT" | awk -F ":" -v width=$WIDTH '
+  { out= "";
+  if ( width == "" )
+  {
+  n = $2 / 1000;
+  if ( n >= 0 )
+  {
+  for ( i = 1; i <= n ; i++ )
+  {
+   out=out "#";
+  }
+  }else
+  {
+    for ( i = -1; i >= n; i-- )
+  {
+   out=out "!";
+  }
+  }
+  }else
+  {
+
+  }
+  { printf "%-10s: %s\n", $1, out }
+  }
+  ' )
