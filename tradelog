@@ -92,7 +92,7 @@ do
     shift
     ;;
   *.log.gz)
-    FILES_GZIP="$FILES_GZIP || $1"
+    FILES_GZIP="$FILES_GZIP $1"
     shift
     ;;
   *)
@@ -106,7 +106,7 @@ done
 if [ "$FILES_GZIP" = "" ]; then
   INPUT_LOG=$(cat $FILES)
 elif [ "$FILES" = "" ]; then
-  INPUT_LOG=$(gzip -d -c $FILES_GZIP - | sort)
+  INPUT_LOG=$(gzip -d -c $FILES_GZIP | sort)
 else
   INPUT_LOG=$(gzip -d -c $FILES_GZIP | cat $FILES - | sort)
 fi
